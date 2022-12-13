@@ -36,7 +36,7 @@ let workers =
         image:"barbara-ramos-graphic-designer.jpg"
     }
 ]
-let img;
+
 let workersList;
 let workList = document.getElementById('list');
 
