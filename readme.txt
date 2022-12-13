@@ -12,3 +12,4 @@ Elenco passaggi
 1- Creare l’array di oggetti con le informazioni fornite.
 2- Stampare su console le informazioni
 3- Stampare le informazioni su DOM
+

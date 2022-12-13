@@ -12,7 +12,7 @@ let workers =
         role: "Chief Editor",
         image: "angela-caroll-chief-editor.jpg"
 
-    },    
+    },
     {
         name_surname: "Walter Gordon",
         role: "Office Manager",
@@ -36,19 +36,18 @@ let workers =
         image:"barbara-ramos-graphic-designer.jpg"
     }
 ]
-
-
+let img;
 let workersList;
 let workList = document.getElementById('list');
 
-// MILESTONE 1 - MILESTONE 2
-for(let i=0; i<workers.length; i++){
-    for(let key in workers[i]){
-        workersList = document.createElement('li');
-        workList.append(workersList);
-        workersList.innerText = workers[i][key];
-        console.log(workers[i][key]);
-    }
-};
+// BONUS 1
 
+for(let i=0; i<workers.length; i++){
+    workersList = document.createElement('p');
+    workList.append(workersList);
+    workersList.innerHTML = 
+    `<h5>${workers[i].name_surname}</h5>
+    <div>${workers[i].role}</div>
+    <img src="./img/${workers[i].image}">`;
+};
 
